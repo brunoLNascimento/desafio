@@ -10,7 +10,6 @@ const planetTatooine = {
     name:'Tatooine',
 }
 
-
 const planetTatooineEditado = {
     planetId:'1d887c00-fb66-11e8-860c-27b8020ec3d3',
     name:'Tatooine',

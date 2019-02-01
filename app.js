@@ -14,6 +14,4 @@ consign({cwd:'app'})
     .then('config')
     .into(app);
 
-
-    //consign().include('app/models').then('app/controllers').then('app/routes').then('app/config').into(server);
 module.exports = app;
