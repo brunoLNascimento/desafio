@@ -21,31 +21,36 @@ exports.getPorId = function(req, res){
         res.status(500).send("Id é requerido");
     }
 
-    var query = { _id : id };
+    var query = { planetId : id };
 
     Planet.find(query, function(err, planets) {
         if (err) {
             res.status(500).send("Erro ao consultar");
-        } else {
+        } 
+        if(planets.length){
             res.send(planets);
+        }else {
+            res.send("Nenhum planeta encontrado");
         }
     });
 }
 
 exports.getPorNome = function(req, res){
-    var nome = req.params.name;
-
+    var nome = req.params.nome;
+    
     if(!nome){
         res.status(500).send("Nome é requerido");
     }
-
-    var query = { nome : nome };
+        var query = { nome : {$regex: `.*${nome}.*`} };
 
     Planet.find(query, function(err, planets) {
         if (err) {
             res.status(500).send("Erro ao consultar");
-        } else {
+        }
+        if(planets.length){
             res.send(planets);
+        }else {
+            res.send("Nenhum planeta encontrado");
         }
     });    
 }

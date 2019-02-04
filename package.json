@@ -32,6 +32,7 @@
     "q": "1.4.1",
     "restler": "3.4.0",
     "restler-q": "0.1.1",
-    "supertest": "^3.4.2"
+    "supertest": "^3.4.2",
+    "uuidv1": "^1.6.14"
   }
 }
