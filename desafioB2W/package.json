@@ -1,0 +1,20 @@
+{
+  "name": "b2w-desafio",
+  "version": "1.0.0",
+  "description": "Desafio B2W, incluir, consultar e remover planeta",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunoLNascimento/desafioB2W.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brunoLNascimento/desafioB2W/issues"
+  },
+  "homepage": "https://github.com/brunoLNascimento/desafioB2W#readme"
+}
